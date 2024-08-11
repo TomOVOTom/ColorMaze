@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .grid {
+            display: grid;
+            gap: 10px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .hint {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="game-container">
+    <h1>Find the Different Color</h1>
+    <div id="grid" class="grid"></div>
+    <button id="hint-button" class="hint">Hint</button>
+    <button id="show-colors-button" class="show colors">Show Colors</button>
+</div>
+<script src="game.js"></script>
+</body>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .grid {
+        display: grid;
+        gap: 10px;
+        max-width: 90vw; /* 最大宽度为视口宽度的90% */
+        max-height: 90vh; /* 最大高度为视口高度的90% */
+        overflow: hidden; /* 防止内容溢出 */
+    }
+    .cell {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .hint {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .hint-highlight {
+        border: 2px solid red;
+    }
+</style>
+</html>
